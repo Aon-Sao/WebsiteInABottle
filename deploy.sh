@@ -8,4 +8,4 @@ if test "server" != ""(basename $PWD)""
   exit
 end
 
-rsync -avz -e "ssh -i $key" --progress ./* ubuntu@$host:/home/ubuntu/server/
+rsync -avz -e "ssh -i $key" --progress --filter=':- .gitignore' ./* ubuntu@$host:/home/ubuntu/server/
