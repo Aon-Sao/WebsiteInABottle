@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /home/ubuntu/server
-caddy run
+caddy run --config /etc/Caddyfile
