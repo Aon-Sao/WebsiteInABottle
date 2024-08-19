@@ -1,2 +1,0 @@
-# WebsiteInABottle
-A Flask application
