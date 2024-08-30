@@ -3,4 +3,10 @@
 
 <h1 class="text-center">Welcome {{current_user.email}}!</h1>
 
+<ul>
+    {% for entry in entries %}
+        <li>{{ entry }}</li>
+    {% endfor %}
+</ul>
+
 {% endblock %}
