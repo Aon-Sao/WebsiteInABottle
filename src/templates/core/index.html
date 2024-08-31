@@ -3,10 +3,19 @@
 
 <h1 class="text-center">Welcome {{current_user.email}}!</h1>
 
-<ul>
+<div class="container">
+  <div class="row row-cols-auto">
     {% for entry in entries %}
-        <li>{{ entry }}</li>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">entry.name</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">entry.date</h6>
+            <p class="card-text">{{ entry.summary }}</p>
+            <a href="{{ entry.location }}" class="card-link">Read full entry</a>
+            </div>
+        </div>
     {% endfor %}
-</ul>
+  </div>
+</div>
 
 {% endblock %}
